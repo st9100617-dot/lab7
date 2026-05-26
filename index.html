@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Список справ - Firebase</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="todo-container">
+        <h1> Мій Список Справ</h1>
+        
+        <div id="loading-spinner" class="spinner">Завантаження даних з бази...</div>
+        <div id="error-message" class="error-box"></div>
+
+        <div class="input-section">
+            <input type="text" id="todo-input" placeholder="Що потрібно зробити сьогодні?">
+            <button onclick="handleAddTodo()">Додати</button>
+        </div>
+
+        <ul id="todo-list"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
